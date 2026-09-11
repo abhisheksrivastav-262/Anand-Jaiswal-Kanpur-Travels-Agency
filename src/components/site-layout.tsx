@@ -245,9 +245,9 @@ export function FloatingButtons() {
         target="_blank"
         rel="noreferrer"
         aria-label="Chat on WhatsApp"
-        className="fixed bottom-20 right-4 z-40 grid h-14 w-14 animate-float-soft place-items-center rounded-full bg-whatsapp text-white shadow-luxury-lg transition-transform hover:scale-105 md:bottom-6 md:right-6"
+        className="fixed bottom-[92px] right-3 z-40 grid h-12 w-12 animate-float-soft place-items-center rounded-full bg-whatsapp text-white shadow-luxury-lg ring-2 ring-white/40 transition-transform hover:scale-105 md:bottom-6 md:right-6 md:h-14 md:w-14 md:ring-0"
       >
-        <MessageCircle className="h-6 w-6" />
+        <MessageCircle className="h-5 w-5 md:h-6 md:w-6" />
       </a>
       <a
         href={PHONE_HREF}

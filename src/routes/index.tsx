@@ -96,7 +96,7 @@ function HomePage() {
           className="absolute inset-0 h-full w-full object-cover object-center"
         />
         <div className="hero-shade absolute inset-0" />
-        <div className="relative mx-auto grid w-full max-w-7xl items-center gap-12 px-4 py-20 sm:px-6 lg:grid-cols-[1.05fr_0.95fr] lg:px-8">
+        <div className="relative mx-auto grid w-full max-w-7xl items-center gap-10 px-4 pb-24 pt-14 sm:px-6 sm:py-20 lg:grid-cols-[1.05fr_0.95fr] lg:px-8">
           <motion.div
             initial={{ opacity: 0, y: 34 }}
             animate={{ opacity: 1, y: 0 }}
@@ -104,11 +104,11 @@ function HomePage() {
           >
             <div className="mb-6 flex items-center gap-3 text-gold">
               <span className="h-px w-10 bg-gold" />
-              <span className="text-xs font-bold uppercase tracking-[0.18em]">
+              <span className="text-[11px] font-bold uppercase tracking-[0.14em] sm:text-xs sm:tracking-[0.18em]">
                 Kanpur&apos;s trusted travel partner
               </span>
             </div>
-            <h1 className="font-display text-4xl font-extrabold leading-[1.08] sm:text-5xl lg:text-6xl">
+            <h1 className="text-balance font-display text-3xl font-extrabold leading-[1.12] sm:text-5xl lg:text-6xl">
               Premium Cab &amp; Taxi Services in Kanpur
             </h1>
             <p className="mt-6 text-base font-medium text-primary-foreground/85 sm:text-lg">
