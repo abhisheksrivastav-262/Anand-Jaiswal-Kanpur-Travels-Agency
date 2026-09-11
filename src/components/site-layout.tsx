@@ -151,7 +151,7 @@ export function Navbar() {
 
 export function Footer() {
   return (
-    <footer className="bg-navy pb-24 pt-14 text-primary-foreground md:pb-8">
+    <footer className="bg-navy pb-8 pt-14 text-primary-foreground">
       <div className="mx-auto grid max-w-7xl gap-10 px-4 sm:px-6 md:grid-cols-2 lg:grid-cols-4 lg:px-8">
         <div>
           <BrandMark />
@@ -241,26 +241,20 @@ export function FloatingButtons() {
   return (
     <>
       <a
+        href={PHONE_HREF}
+        aria-label="Call now"
+        className="fixed bottom-[86px] right-3 z-40 grid h-12 w-12 place-items-center rounded-full bg-gold text-gold-foreground shadow-luxury-lg ring-2 ring-white/40 transition-transform hover:scale-105 md:bottom-[96px] md:right-6 md:h-14 md:w-14 md:ring-0"
+      >
+        <Phone className="h-5 w-5 md:h-6 md:w-6" />
+      </a>
+      <a
         href={DEFAULT_WA_HREF}
         target="_blank"
         rel="noreferrer"
         aria-label="Chat on WhatsApp"
-        className="fixed bottom-[92px] right-3 z-40 grid h-12 w-12 animate-float-soft place-items-center rounded-full bg-whatsapp text-white shadow-luxury-lg ring-2 ring-white/40 transition-transform hover:scale-105 md:bottom-6 md:right-6 md:h-14 md:w-14 md:ring-0"
+        className="fixed bottom-5 right-3 z-40 grid h-12 w-12 animate-float-soft place-items-center rounded-full bg-whatsapp text-white shadow-luxury-lg ring-2 ring-white/40 transition-transform hover:scale-105 md:bottom-6 md:right-6 md:h-14 md:w-14 md:ring-0"
       >
         <MessageCircle className="h-5 w-5 md:h-6 md:w-6" />
-      </a>
-      <a
-        href={PHONE_HREF}
-        aria-label="Call now"
-        className="fixed bottom-[152px] right-5 z-40 hidden h-12 w-12 place-items-center rounded-full bg-gold text-gold-foreground shadow-luxury transition-transform hover:scale-105 md:grid md:bottom-[92px] md:right-7"
-      >
-        <Phone className="h-5 w-5" />
-      </a>
-      <a
-        href={PHONE_HREF}
-        className="fixed inset-x-0 bottom-0 z-40 flex h-14 items-center justify-center gap-2 bg-primary text-sm font-bold text-primary-foreground shadow-luxury md:hidden"
-      >
-        <Phone className="h-4 w-4" /> Call Now — {PHONE_DISPLAY}
       </a>
     </>
   );
